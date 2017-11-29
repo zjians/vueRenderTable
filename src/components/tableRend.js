@@ -47,7 +47,7 @@ export default{
         bodyTr.push(
           h('tr', {
             on: {
-              click: _this.rowClick
+              click: _this.rowClick.bind(_this, {index, Rowdata: item, cellData: bodyTd[index]})
             }
           }, bodyTd)
         )

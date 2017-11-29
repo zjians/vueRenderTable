@@ -65,10 +65,10 @@ export default {
     ZTable
   },
   methods: {
-    handleRowClick (event, rowData) {
+    handleRowClick (rowData, event) {
       alert('行被点击')
+      console.dir(rowData)
       console.dir(event)
-      console.dir(rowData) // TODO
     }
   }
 }
